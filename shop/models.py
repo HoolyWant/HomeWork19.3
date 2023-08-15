@@ -21,7 +21,6 @@ class Product(models.Model):
 class Category(models.Model):
     category_name = models.CharField(max_length=150, verbose_name='категория')
     description = models.CharField(max_length=150, verbose_name='описание')
-    created_at = models.CharField(max_length=100, null=True, verbose_name='сделано в')
 
     def __str__(self):
         return f'{self.category_name}'
