@@ -1,0 +1,1 @@
+[{"model": "shop.category", "pk": 1, "fields": {"category_name": "Фольга", "description": "Блестит"}}, {"model": "shop.category", "pk": 2, "fields": {"category_name": "Червяк", "description": "Извивается и ползет"}}]
