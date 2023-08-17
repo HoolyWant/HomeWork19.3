@@ -24,7 +24,7 @@ class Command(BaseCommand):
 
         list_for_push = []
         for product in product_list:
-            Product.objects.create(name=product['product_name'],
+            Product.objects.create(product_name=product['product_name'],
                                    description=product['description'],
                                    category_name=Category.objects.get(pk=product['category_name']),
                                    buy_cost=product['buy_cost']
