@@ -7,6 +7,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         Product.objects.all().delete()
+        Category.objects.all().delete()
         category_list = [
             {'category_name': 'Еда', 'description': 'Это едят'},
             {'category_name': 'Неосязаемое', 'description': 'Это не осязается'},
